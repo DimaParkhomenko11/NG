@@ -8,7 +8,7 @@ setlocale(LC_ALL,"ukr");
 system("chcp 1251");
 system("cls");
     int q,i=0;
-    cout << "¬ведите число>>";
+    cout << "Insert the number>>";
     cin>>q;
     while (q>=i)
     {

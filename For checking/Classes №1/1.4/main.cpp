@@ -8,7 +8,7 @@ setlocale(LC_ALL,"ukr");
 system("chcp 1251");
 system("cls");
     int q;
-    cout << "Введите количестово *: ";
+    cout << "Enter quantity *: ";
     cin>>q;
     for (int i=0;q>i;i++)
         cout<<"*";

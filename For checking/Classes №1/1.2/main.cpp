@@ -9,22 +9,22 @@ system("chcp 1251");
 system("cls");
 
     int q;
-    cout << "Введите вашу ЗП>>";
+    cout << "Enter your salary>>";
     cin>>q;
     if (q<1000)
-        cout << "Работай еще";
+        cout << "Work still";
     if (q>999)
         {
         if (q>999999)
              {
-             cout << "Ты милионер";
+             cout << "You are a millionaire";
              }
         if (q<1000000)
             {
-            cout << "Ты богатый";
+            cout << "You are rich";
             }
         }
-       cout << ", но ты молодец";
+       cout << ", but you are well done";
 
     return 0;
 }

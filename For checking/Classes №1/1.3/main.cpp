@@ -9,15 +9,15 @@ system("chcp 1251");
 system("cls");
 
     int q,w,i,r=0;
-    cout<<"Введите число 1: ";
+    cout<<"Enter the number 1: ";
     cin>>q;
-    cout<<"Введите число 2: ";
+    cout<<"Enter the number 2: ";
     cin>>w;
-    cout<<"1=сума\n"
-        <<"2=разница\n"
-        <<"3=умножение\n"
-        <<"4=деление\n"
-        <<"Выберите действие>>";
+    cout<<"1=soum(+)\n"
+        <<"2=difference(-)\n"
+        <<"3=multiplication(*)\n"
+        <<"4=division(/)\n"
+        <<"Select an action>>";
     cin>>i;
     if ((i>0)&&(i<5))
     {
@@ -29,9 +29,9 @@ system("cls");
             r=q*w;
         if (i==4)
             r=q/w;
-        cout<<"Результат = "<<r;
+        cout<<"Result = "<<r;
     }
     else
-    cout<<"Введено некорректное значение\n";
+    cout<<"Invalid value entered\n";
     return 0;
 }

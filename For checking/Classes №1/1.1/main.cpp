@@ -9,10 +9,10 @@ system("chcp 1251");
 system("cls");
 
     int q,w;
-    cout<<"¬ведите число 1: ";
+    cout<<"Enter the number 1: ";
     cin>>q;
-    cout<<"¬ведите число 2: ";
+    cout<<"Enter the number 2: ";
     cin>>w;
-    cout<<"–езультат = "<<q+w;
+    cout<<"Result = "<<q+w;
     return 0;
 }

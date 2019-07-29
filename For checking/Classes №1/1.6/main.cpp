@@ -8,7 +8,7 @@ setlocale(LC_ALL,"ukr");
 system("chcp 1251");
 system("cls");
 int q;
-cout<<"¬ведите размер куба>>";
+cout<<"Enter Cube Size>>";
 cin>>q;
 for (int i=0;q>i;i++){
         cout<<"\n* ";
