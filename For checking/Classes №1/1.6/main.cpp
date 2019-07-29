@@ -11,9 +11,10 @@ int q;
 cout<<"Enter Cube Size>>";
 cin>>q;
 for (int i=0;q>i;i++){
-        cout<<"\n* ";
+        cout<<"*";
     for(int j=1;q>j;j++)
-        cout<<"* ";
+        cout<<"*";
+        cout<<endl;
     }
     return 0;
 }
