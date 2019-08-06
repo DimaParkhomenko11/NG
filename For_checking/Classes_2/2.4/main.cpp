@@ -11,9 +11,15 @@ int main()
         cout<<"Zvezdochek v "<<i+1<<"-om stolbike:";
         cin>>stolbik[i];
     }
-    for (int q=0;q<8;q++)
+    int Max=stolbik[0];
+    for (i=1; i<5; i++)
     {
-    for (int i=0;i<5;i++)
+        if (stolbik[i]>Max)
+            Max=stolbik[i];
+    }
+    for (int q=0;q<Max;q++)
+    {
+    for (i=0;i<5;i++)
     {
         if (stolbik[i]>0)
             cout<<"*";
