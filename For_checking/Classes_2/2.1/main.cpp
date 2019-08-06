@@ -15,16 +15,16 @@ int main()
     cout<<"A teper vvedi svoyu shkolu:";
     cin>>mySchool;
 
-
-        if ((mySchool==school[0])||(mySchool==school[1])||(mySchool==school[2])||(mySchool==school[3])||(mySchool==school[4])||(mySchool==school[5])||(mySchool==school[6])||(mySchool==school[7])||(mySchool==school[8])||(mySchool==school[9]))
+        for (i=0;i<10;i++)
         {
-            cout<<"Ya znayu etu shkolu!";
+            if (school[i]==mySchool)
+            {
+                cout<<"Ya znayu etu shkolu!";
+                i+=10;
+            }
         }
-        else
-        {
-            cout<<"Ya ne znayu etu shkolu!";
-
-        }
+    if (i<=10)
+        cout<<"Ya ne znayu etu shkolu!";
 
     return 0;
 }
