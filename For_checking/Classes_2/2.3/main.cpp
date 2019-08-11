@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int number[20]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-    int i=-1;
+    int i=0;
     int sizze=0;
     int End=0;
     do
@@ -24,7 +24,6 @@ int main()
         if (i==19)
             number[i]=0;
     }while(number[i]!=0);
-    cout<<endl;
     if (End==0)
     {
     for (int i=0;i<20;i++)
@@ -39,7 +38,7 @@ int main()
             numberMax = number[i];
     }
 
-    for (int line=0;line<sizze;line++)
+    for (int line=1;line<sizze+1;line++)
     {
         for (int space=0;(space<(numberMax-number[line])/2);space++)
         {
