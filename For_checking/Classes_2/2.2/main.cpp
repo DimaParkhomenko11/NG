@@ -21,8 +21,10 @@ int main()
             cin>>sum;
             card[N-1]+=sum;
             for (int i=0;i<100;i++)
-            cout<<card[i]<<" ";
-        cout<<endl;
+            {
+                cout<<card[i]<<" ";
+            }
+            cout<<endl;
         }
         else
         {
