@@ -1,14 +1,13 @@
 #include <iostream>
-#include<cstring>
 using namespace std;
 
 int main()
 {
-    int i=1,q=0;
+    int i=0,q=0;
     int N=0;
     char stroka[256]{' '};
     cin.getline(stroka,256);
-    stroka[0]=' ';
+    stroka[-1]=' ';
     while (stroka[i]!=0)
     {
         if ((stroka[i]<'a')||(stroka[i]>'z'))
