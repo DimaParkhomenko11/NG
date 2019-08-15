@@ -18,15 +18,12 @@ int main()
         }
      i++;
     }while(number[i-1]!=0 && i<20);
-    //if (End==0)
-   // {
     for (int i=0;i<20;i++)
     {
-        cout<<number[i];
        if (number[i]>0)
            sizze++;
     }
-   /* int numberMax=number[0];
+    int numberMax=number[0];
     for (int i=1; i<20; i++)
     {
         if (number[i]>numberMax)
@@ -44,8 +41,6 @@ int main()
             cout<<"*";
         }
         cout<<endl;
-    }*/
-
-   // }
+    }
     return 0;
 }
