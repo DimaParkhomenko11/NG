@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
- int card[100];
- int N,i,k=0;
- int sum;
+    int card[100];
+    int N,i,k=0;
+    int sum;
     for (i=0;i<100;i++)
     {
         card[i]=0;
