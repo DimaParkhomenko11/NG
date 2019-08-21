@@ -11,11 +11,11 @@ int main()
     cin.getline(stroka,256);
         while (stroka[i]!=0)
         {
-            for (w=97;w<123;w++)
+            for (w='a';w<='z';w++)
             {
                 if (stroka[i]==w || stroka[i]==w-32)
-                letter[w-97]++;
-                ABC[w-97]=w;
+                letter[w-'a']++;
+                ABC[w-'a']=w;
             }
             i++;
         }
@@ -34,10 +34,10 @@ int main()
                 }
             }
         }
-        for (w=65;w<91;w++)
+        for (w='A';w<='Z';w++)
         {
-            if (letter[w-65]!=0)
-                cout<<ABC[w-65]<<"-"<<letter[w-65]<<endl;
+            if (letter[w-'A']!=0)
+                cout<<ABC[w-'A']<<"-"<<letter[w-'A']<<endl;
         }
     return 0;
 }
