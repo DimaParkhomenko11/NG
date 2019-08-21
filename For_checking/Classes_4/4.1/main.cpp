@@ -2,33 +2,24 @@
 
 using namespace std;
 
-
-
-
-void suma(int chislo,int sum,int i)
+void suma(int chislo,int sum)
 {
-
-    //sum=chislo;
-    if (i<chislo)
-    {
-        i++;
-        sum=sum+i;
-
-
-     suma(chislo,sum,i);
-    }
-    else
-        cout<<"The sum of all digits in the number = "<<sum<<endl;
-
+  if (chislo==0)
+      cout<<"0";
+  else
+  {
+      sum=chislo/10+chislo%10;
+      cout<<"The sum of all digits in the number = "<<sum;
+  }
 }
 
 int main()
 {
-    int sum=0,i=0;
+    int sum=0;
     int chislo;
     cout<<"Enter the number>>";
     cin>>chislo;
-    suma(chislo,sum,i);
-
+    suma(chislo,sum);
     return 0;
 }
+
