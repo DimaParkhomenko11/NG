@@ -2,37 +2,40 @@
 
 using namespace std;
 
-void space(int sizze,int heightPos,int widthPos)
+void space(int sizze)
 {
-    for (widthPos=0;widthPos<sizze-heightPos;widthPos++)
-        {
+    for (int space=0;space<sizze;space++)
             cout<<" ";
-        }
-}
-void star(int sizze,int heightPos,int widthPos)
-{
 
-        for (widthPos=0;widthPos<heightPos*2-1;widthPos++)
+}
+void star(int sizze)
+{
+        for (int widthPos=0;widthPos<sizze;widthPos++)
         {
             cout<<"*";
         }
 }
-void leg(int sizze,int heightPos,int widthPos)
+void leg(int sizze)
 {
-    for (heightPos=1;heightPos<sizze;heightPos++)
+    for (int heightPos=1;heightPos<sizze;heightPos++)
     {
         cout<<" ";
     }
     cout<<"*";
 }
-void tree(int sizze,int heightPos,int widthPos)
+void schetchik(int sizze)
 {
-  for (heightPos=1;heightPos<=sizze;heightPos++)
+     for (int heightPos=1;heightPos<=sizze;heightPos++)
     {
-        space(sizze,heightPos,widthPos);
-        star(sizze,heightPos,widthPos);
+        space(sizze-heightPos);
+        star(heightPos*2-1);
         cout<<endl;
     }
+}
+void tree(int sizze)
+{
+  schetchik(sizze);
+  leg(sizze);
 }
 
 
@@ -44,8 +47,7 @@ int main()
  int heightPos=1;
  int widthPos=0;
  cin>>sizze;
-tree( sizze, heightPos, widthPos);
-leg(sizze,heightPos,widthPos);
+ tree(sizze);
 
 return 0;
 }
