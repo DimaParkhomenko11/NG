@@ -13,29 +13,34 @@ void suma(int sum,int N,int card[])
 {
     card[N-1]+=sum;
 }
+
+int cardnumber(int N)
+{
+    cout<<"Vvedi nomer kartochki: ";
+    cin>>N;
+    return N;
+}
+int amountmoney(int sum)
+{
+    cout<<"Skolko polozhit: ";
+    cin>>sum;
+    return sum;
+}
 void vivod(int card[])
 {
-     for (int i=0;i<10;i++)
-            {
-                cout<<card[i]<<" ";
-            }
-            cout<<endl;
-}
-
-int main()
-{
-    int card[10];
-    int N,i,k=0;
-    int sum;
-    zapolnenie(card,i);
-    for (;;)
+    for (int i=0;i<10;i++)
     {
-        cout<<"Vvedi nomer kartochki: ";
-        cin>>N;
+        cout<<card[i]<<" ";
+    }
+    cout<<endl;
+}
+void putmoney(int N,int sum,int card[])
+{
+        N=cardnumber(N);
         if (N>0 && N<11)
         {
-            cout<<"Skolko polozhit: ";
-            cin>>sum;
+            sum=amountmoney(sum);
+            cout<<endl<<sum<<endl;
             suma(sum,N,card);
             vivod(card);
         }
@@ -43,11 +48,16 @@ int main()
         {
             cout<<"Error: you entered incorrect values!!!\n";
         }
+}
+int main()
+{
+    int card[10];
+    int N=0,i,k=0;
+    int sum=0;
+    zapolnenie(card,i);
+    for (;;)
+    {
+        putmoney(N,sum,card);
     }
-
-    for(k=0;k<10;k++)
-    cout<<card[k];
-
-
     return 0;
 }
