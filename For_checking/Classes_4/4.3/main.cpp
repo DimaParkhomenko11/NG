@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 void zapolnenie(int card[],int i)
 {
     for (i=0;i<10;i++)
