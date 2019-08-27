@@ -3,31 +3,31 @@
 #include<ctime>
 using namespace std;
 
-void addarray(int array[])
+void addarray(int array[],int N)
 {
     int random_number;
     srand(time(NULL));
-    for (int i=0;i<10;i++)
+    for (int i=0;i<N;i++)
     {
         random_number =0+rand()%100;
         array[i]=random_number;
         cout<<array[i]<<' ';
     }
 }
-int max_number(int array[])
+int max_number(int array[],int N)
 {
     int numberMax=array[0];
-    for (int i=1; i<10; i++)
+    for (int i=1; i<N; i++)
     {
         if (array[i]>numberMax)
             numberMax = array[i];
     }
     return numberMax;
 }
-int min_number(int array[])
+int min_number(int array[],int N)
 {
     int numberMin=array[0];
-    for (int i=1; i<10; i++)
+    for (int i=1; i<N; i++)
     {
         if (array[i]<numberMin)
             numberMin=array[i];
@@ -41,9 +41,9 @@ bool chetnost(int array [],int number)
     else
         return false;
 }
-void function_5(int array[])
+void function_5(int array[],int N)
 {
-    for (int i=0;i<10;i++)
+    for (int i=0;i<N;i++)
     {
         if (array[i]%2==0)
             array[i]=array[i]-1;
@@ -52,9 +52,9 @@ void function_5(int array[])
         cout<<array[i]<<' ';
     }
 }
-void array_cleaning(int array[])
+void array_cleaning(int array[],int N)
 {
-     for (int i=0;i<10;i++)
+     for (int i=0;i<N;i++)
     {
         array[i]=0;
         cout<<array[i]<<' ' ;
@@ -70,15 +70,15 @@ bool letter(int number)
 }
 int main()
 {
-    int number;
-    int array[10];
+    int number,N=10;
+    int array[N];
     cout<<"\nFunction 1\n"
         <<"Random array = ";
-    addarray(array);
+    addarray(array,N);
     cout<<"\nFunction 2\n";
-    cout<<"Max number in array = "<<max_number(array);
+    cout<<"Max number in array = "<<max_number(array,N);
     cout<<"\nFunction 3\n";
-    cout<<"Min number in array = "<<min_number(array);
+    cout<<"Min number in array = "<<min_number(array,N);
     cout<<"\nFunction 4\n";
     cout<<"Enter array element>>";
     cin>>number;
@@ -86,10 +86,10 @@ int main()
     cout<<"\nFunction 5\n";
     cout<<"All odd numbers in the array are multiplied by 2, and it took away even numbers 1.\n"
         <<"array = ";
-    function_5(array);
+    function_5(array,N);
     cout<<"\nFunction 6\n"
         <<"Clear array = ";
-    array_cleaning(array);
+    array_cleaning(array,N);
     number=0;
     cout<<"\nFunction 7\n";
     cout<<"Enter the number>>";
